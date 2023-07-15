@@ -1,0 +1,103 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+header {
+    background-color: #35495e;
+    color: #fff;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 40px;
+}
+
+footer {
+    background-color: #35495e;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Specific Styles */
+h1 {
+    margin: 0;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 0;
+    color: #35495e;
+}
+
+/* CSS Grid Layout */
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+}
+
+header,
+footer {
+    grid-column: 1 / -1;
+}
+
+section {
+    grid-column: 1;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.project {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    body {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    section {
+        grid-column: span 2;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
